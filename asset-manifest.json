@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/miu/static/css/main.c4aa2669.css",
+    "main.js": "/miu/static/js/main.ca44c332.js",
+    "static/media/home.png": "/miu/static/media/home.4311071c39a8632e3182.png",
+    "static/media/home3.png": "/miu/static/media/home3.953ff35c8b4bc67a04f6.png",
+    "static/media/home1.png": "/miu/static/media/home1.85e7bb0bc3b78152f619.png",
+    "static/media/home2.png": "/miu/static/media/home2.b49be9defe29cf0a2597.png",
+    "static/media/footer_waves.png": "/miu/static/media/footer_waves.b2459ec9d9063da6bf24.png",
+    "static/media/applay.png": "/miu/static/media/applay.ec956340559b4a80d336.png",
+    "static/media/Profile.png": "/miu/static/media/Profile.97c7133f38f00d5ed371.png",
+    "index.html": "/miu/index.html",
+    "main.c4aa2669.css.map": "/miu/static/css/main.c4aa2669.css.map",
+    "main.ca44c332.js.map": "/miu/static/js/main.ca44c332.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4aa2669.css",
+    "static/js/main.ca44c332.js"
+  ]
+}
