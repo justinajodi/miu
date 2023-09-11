@@ -1,0 +1,141 @@
+.newProductContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(222, 200, 187);
+    border-left :1px solid white;
+    display: flex;
+
+    flex-direction: column;
+    height: 100vh;
+  }
+  .newProductContainer h1 {
+    color: rgb(27, 25, 25);
+    font: 300 1.5rem "Poppins";
+    text-align: center;
+    padding-bottom: 2vmax;
+  }
+  
+  .createProductForm {
+    display: flex;
+    border-radius:1vmax ;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 3vmax;
+    justify-content: space-evenly;
+    height: 70%;
+    width: 40vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(138, 120, 120);
+  }
+  
+  .createProductForm > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .createProductForm > div > input,
+  .createProductForm > div > select,
+  .createProductForm > div > textarea {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border:none;
+    border-radius: 4px;
+    font: 300 0.9vmax "Poppins";
+    outline: none;
+  }
+  
+  .createProductForm > div > svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: rgb(0, 0, 0);
+  }
+  
+  #createProductFormFile > input {
+    display: flex;
+    padding: 0%;
+  }
+  
+  #createProductFormFile > input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 5vh;
+    border: none;
+    margin: 0%;
+    font: 400 0.8vmax "Poppins";
+    transition: all 0.5s;
+    padding: 0 1vmax;
+    color: rgb(0, 0, 0);
+    background-color: rgb(232, 221, 209);
+  }
+  
+  #createProductFormFile > input::file-selector-button:hover {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  #createProductFormImage {
+    width: 100%;
+    overflow: auto;
+  }
+  
+  #createProductFormImage > img {
+    width: 3vmax;
+    margin: 0 0.5vmax;
+  }
+  #createProductBtn {
+    border: none;
+    background-color: rgb(155,121,102);
+    color: white;
+    font: 300 0.9vmax "Poppins";
+    width: 100%;
+    padding: 0.8vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 4px;
+    outline: none;
+    /* box-shadow: 0 2px 5px rgb(0, 0, 0); */
+  }
+  
+  #createProductBtn:hover {
+    background-color: rgb(136, 93, 75);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .newProductContainer {
+      background-color: rgb(255, 255, 255);
+    }
+    .createProductForm {
+      padding: 5vmax;
+    }
+  
+    .createProductForm > div > input,
+    .createProductForm > div > select,
+    .createProductForm > div > textarea {
+      padding: 2.5vmax 5vmax;
+      font: 300 1.7vmax "Poppins";
+    }
+  
+    .createProductForm > div > svg {
+      font-size: 2.8vmax;
+    }
+  
+    #createProductFormFile > img {
+      width: 8vmax;
+      border-radius: 100%;
+    }
+  
+    #createProductFormFile > input::file-selector-button {
+      height: 7vh;
+      font: 400 1.8vmax "Poppins";
+    }
+  
+    #createProductBtn {
+      font: 300 1.9vmax "Poppins";
+      padding: 1.8vmax;
+    }
+  }
+  

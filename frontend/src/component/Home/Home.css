@@ -1,0 +1,246 @@
+.banner {
+  background-image: url("D:/MERN PROJECT V3/MERN PROJECT/frontend/src/images/home.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vmin;
+  display: flex;
+  margin-left:5px;
+  flex-direction: column;
+  text-align:center;
+  align-items: flex-start;
+  justify-content:center;
+  color: white;
+  font-family: "Poppins";
+  animation: change 30s infinite ease-in-out;
+}
+/* .Section_top{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: url("D:/MERN PROJECT V3/MERN PROJECT/frontend/src/images/home.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  animation: change 10s infinite ease-in-out;
+} */
+
+@keyframes change{
+  0%
+  {
+      background-image: url("D:/MERN PROJECT V3/MERN PROJECT/frontend/src/images/home3.png");
+  }
+  20%
+  {
+      background-image: url("D:/MERN PROJECT V3/MERN PROJECT/frontend/src/images/home2.png");
+  }
+  40%
+  {
+      background-image: url("D:/MERN PROJECT V3/MERN PROJECT/frontend/src/images/home1.png");
+  }
+  60%
+  {
+      background-image: url("D:/MERN PROJECT V3/MERN PROJECT/frontend/src/images/home3.png");
+  }
+  80%
+  {
+      background-image: url("D:/MERN PROJECT V3/MERN PROJECT/frontend/src/images/home2.png");
+  }
+  100%
+  {
+      background-image: url("D:/MERN PROJECT V3/MERN PROJECT/frontend/src/images/home1.png");
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper{
+  display: flex;
+}
+.wrapper .dynamic-txts{
+  margin-left: 5vmax;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background:#d6a58b;
+  border-left: 2px solid rgb(255, 255, 255);
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+.dynamic-txts li{
+  list-style: none;
+  
+  font:200 60px Jost;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+.banner > h1 {
+  margin-left: 5vmax;
+  font: 300 6vmax Arapey;
+ 
+}
+.banner > h1:hover{
+  color:rgb(255, 255, 255); 
+  
+}
+.banner > p {
+  margin-left: 5vmax;
+  font: 300 2vmax "Jost";
+  font-style: italic ;
+  color:rgb(255, 255, 255);
+}
+
+.banner > a > button {
+  margin-left: 5vmax;
+  margin-bottom: 1vmax;
+  cursor: pointer;
+  background-color: white;
+  border: 0.2vmax solid white;
+  border-radius: 10px;
+  padding: 1vmax;
+  transition: all 0.5s;
+  width: 9vmax;
+  font: 500 1vmax "Poppins";
+}
+.banner > a > button:hover {
+  background-color: #d6a58b;
+  color: white;
+}
+
+/* .banner::after {
+  content: "";
+  width: 100vw;
+  height: 100vmin;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  clip-path: polygon(100% 68%, 0 100%, 100% 100%);
+  max-width: 100%;
+} */
+
+.homeHeading {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.4vmax;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20vmax;
+  padding: 1vmax;
+  margin: 5vmax auto;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.productCard {
+  width: 14vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+}
+
+.productCard > img {
+  width: 14vmax;
+}
+
+.productCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productCardSpan {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "Poppins";
+}
+
+.productCard > p {
+  font-family: "Poppins";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+
+.productCard > span {
+  margin: 0.5vmax;
+  color: rgb(179, 72, 92);
+  font-family: "Poppins", "Arial Narrow", Arial, sans-serif;
+  font-size: 1vmax;
+}
+
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+
+  transform: translateY(-1vmax);
+}
+
+@media screen and (max-width: 600px) {
+  .productCard > p {
+    font-size: 1.7vmax;
+  }
+
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+
+  .productCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Poppins";
+  }
+}

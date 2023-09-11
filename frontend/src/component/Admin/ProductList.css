@@ -1,0 +1,54 @@
+.productListContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border-left :1px solid white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  #productListHeading {
+    font: 400 2rem "Poppins";
+    padding: 0.5vmax;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    transition: all 0.5s;
+    margin: 2rem;
+    text-align: center;
+  }
+  
+  .productListTable {
+    background-color: rgb(242, 213, 195);
+    border: none !important;
+  }
+  
+  .productListTable div {
+    font: 300 1vmax "Poppins";
+    color: rgb(0, 0, 0);
+    border: none !important;
+  }
+  
+  .productListTable a,
+  .productListTable button {
+    color: rgb(0, 0, 0);
+    transition: all 0.5s;
+  }
+  
+  .productListTable a:hover {
+    color: "rgb(155,121,102)";
+  }
+  
+  .productListTable button:hover {
+    color: rgb(193, 80, 80);
+  }
+  
+  .MuiDataGrid-columnHeader div {
+    color: rgb(255, 255, 255);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .productListTable div {
+      font: 300 4vw "Poppins";
+    }
+  }

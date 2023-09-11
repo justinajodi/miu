@@ -1,0 +1,168 @@
+time stamps
+4:45--header
+
+4:52--footer
+
+5:00--home
+
+5:7--product card
+
+5:18-- metadata
+
+5:20--store,constant,reducer,action
+
+5:36 --proxy
+
+5:42 --product fetched from store successfully and displayed on home screen
+
+5:47 --loader ka kaam
+
+5:52 -- reactalert in index .js,home.js
+
+5:53-- product details -- reducer constant actions products
+
+6:3 --product details page
+
+6:26--review card
+
+6:35 --products page
+
+6:42 --search button
+
+6:50 --pagination
+
+7:00--price filter
+
+7:6 --filteredproductcount(productcontroller,reducer,products),ratings,categories
+
+7:26 --login
+
+8:00--cloudinary
+
+8:20--profile page
+
+8:50--upate profile
+
+9:00-update password
+
+9:20--forgot password
+
+9:45--cartt
+
+10:3 TAK CART DONE
+
+11:00 shippingdone...order confirm start hogaya
+
+11:10 processpayement
+
+11: 33 payment.js
+
+12:11 reviews new
+
+12:52 admin route in protecetdroute.js
+
+13:37 newproduxt.js
+cd .\frontend
+npx create-react-app .
+npm start
+npm i axios react-alert react-alert-template-basic react-helmet react-redux redux redux-thunk redux-devtools-extension react-router-dom overlay-navbar
+
+
+npm i webfontloader
+npm i react-rating-stars-component
+npm i react-icons
+npm install react-material-ui-carousel --save
+npm i  @mui/material @mui/icons-material @mui/styles    
+npm install react-material-ui-carousel@v2 --save
+npm i  @material-ui/core @material-ui/icons
+npm i react-js-pagination
+
+
+to do
+
+footer {
+    margin-top: 70vmax;
+    padding: 2vmax;
+    /* background-image: url("D:/MERN PROJECT/frontend/src/images/footer_waves.png"); */
+    background-color:#b8886e;
+      
+       /* color:transparent;
+       -webkit-background-clip:text; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    color: rgb(32, 30, 30);
+    display: flex;
+    align-items: center;
+  }
+  
+  .leftFooter {
+    width: 20%;
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftFooter > h4 {
+    font-family: "Poppins";
+    font-size: 1.5vmax;
+  }
+  .leftFooter > p {
+    text-align: center;
+    font-size: 1.2vmax;
+    font-family: "Arapey";
+  }
+  .leftFooter > img {
+    width: 10vmax;
+    margin: 1vmax;
+    cursor: pointer;
+  }
+  
+  .midFooter {
+    width: 60%;
+
+    text-align: center;
+  }
+  
+  .midFooter > h1 {
+    
+    font: 5vmax "Arapey";
+    font-weight: bolder;
+    color: rgb(9, 9, 9);
+  }
+
+  .midFooter > p {
+    max-width: 60%;
+    font-family: "Jost";
+    font-size:1vmax;
+    font-weight: bold;
+    margin: 0.5vmax auto;
+  }
+  
+  .rightFooter {
+    width: 20%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightFooter > h4 {
+    font-family: "Poppins";
+    font-size: 1.4vmax;
+
+  }
+  .rightFooter > a {
+
+    text-decoration: none;
+    font-size: 1.3vmax;
+    font-family: "Poppins";
+    font-weight: bolder;
+    color: rgb(32, 30, 30);
+    transition: all 0.5s;
+    margin: 0.5vmax;
+  }
+  
+  .rightFooter > a:hover {
+    color: rgb(88, 62, 62);
+    transform: scale(1.1);
+  }
